@@ -1,4 +1,3 @@
-// 111
 const searchEl = document.querySelector('.search');
 const serachInputEl = searchEl.querySelector('input');
 
