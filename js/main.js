@@ -1,20 +1,3 @@
-const searchEl = document.querySelector('.search');
-const serachInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click', function () {
-  serachInputEl.focus();
-});
-
-serachInputEl.addEventListener('focus', function () {
-  searchEl.classList.add('focused');
-  serachInputEl.setAttribute('placeholder', '통합검색');
-});
-
-serachInputEl.addEventListener('blur', function () {
-  searchEl.classList.remove('focused');
-  serachInputEl.setAttribute('placeholder', '');
-});
-
 //<Ch 10. 스타벅스 예제> 12. 헤더와 드롭다운 메뉴 - 전역배지(GSAP) + 33.페이지 상단으로 이동(ScrollTo)
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
@@ -156,6 +139,4 @@ spyEls.forEach(function(spyEl) {
     .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
 
-//<Ch 10. 스타벅스 예제> 32.푸터 
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();  // 
+
